@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0109707F25638344001D8995 /* Disciplinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109707E25638344001D8995 /* Disciplinas.swift */; };
+		01097082256383DA001D8995 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01097081256383DA001D8995 /* Pessoa.swift */; };
+		01097085256386B6001D8995 /* Aluno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01097084256386B6001D8995 /* Aluno.swift */; };
+		010970892563EF3A001D8995 /* Matricula.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010970882563EF3A001D8995 /* Matricula.swift */; };
+		0109708C2563F037001D8995 /* Situacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109708B2563F037001D8995 /* Situacao.swift */; };
+		0109708F256571DF001D8995 /* HorariosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0109708E256571DF001D8995 /* HorariosVC.swift */; };
+		011A31BF2566BD5D00422DF3 /* Agenda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31BE2566BD5D00422DF3 /* Agenda.swift */; };
+		011A31C32566BE3800422DF3 /* Professor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31C22566BE3800422DF3 /* Professor.swift */; };
+		011A31C62566BE9600422DF3 /* Turma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31C52566BE9600422DF3 /* Turma.swift */; };
+		011A31C92566BEC500422DF3 /* Horario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31C82566BEC500422DF3 /* Horario.swift */; };
+		011A31CE2566C1D500422DF3 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31CD2566C1D500422DF3 /* Usuario.swift */; };
+		011A31D12566CEFE00422DF3 /* Tipoensino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31D02566CEFE00422DF3 /* Tipoensino.swift */; };
+		011A31E1256734DE00422DF3 /* AgendaTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011A31DF256734DE00422DF3 /* AgendaTBVC.xib */; };
+		011A31E2256734DE00422DF3 /* AgendaTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011A31E0256734DE00422DF3 /* AgendaTBVC.swift */; };
+		011A31ED25688F3F00422DF3 /* agenda.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A31BD25669BEB00422DF3 /* agenda.json */; };
+		012A85A225555F2200B63E05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85A125555F2200B63E05 /* AppDelegate.swift */; };
+		012A85A425555F2200B63E05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85A325555F2200B63E05 /* SceneDelegate.swift */; };
+		012A85A625555F2200B63E05 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85A525555F2200B63E05 /* HomeVC.swift */; };
+		012A85A925555F2200B63E05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A85A725555F2200B63E05 /* Main.storyboard */; };
+		012A85AB25555F2500B63E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 012A85AA25555F2500B63E05 /* Assets.xcassets */; };
+		012A85AE25555F2500B63E05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A85AC25555F2500B63E05 /* LaunchScreen.storyboard */; };
+		012A85B8255562DD00B63E05 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A85B7255562DD00B63E05 /* Home.storyboard */; };
+		012A85C525556C4700B63E05 /* HomeCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 012A85C325556C4700B63E05 /* HomeCVCell.xib */; };
+		012A85C625556C4700B63E05 /* HomeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85C425556C4700B63E05 /* HomeCVCell.swift */; };
+		012A85CB25556DCC00B63E05 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85CA25556DCC00B63E05 /* Menu.swift */; };
+		012A85CE25556F1500B63E05 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A85CD25556F1500B63E05 /* Perfil.storyboard */; };
+		013617262577B2360083E6D7 /* AgendaDetalheTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013617242577B2360083E6D7 /* AgendaDetalheTBVC.xib */; };
+		013617272577B2360083E6D7 /* AgendaDetalheTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013617252577B2360083E6D7 /* AgendaDetalheTBVC.swift */; };
+		0136172F2577B3D70083E6D7 /* AgendaDetalheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136172E2577B3D70083E6D7 /* AgendaDetalheVC.swift */; };
+		0139EA2525C3474600CF8482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0139EA2425C3474600CF8482 /* GoogleService-Info.plist */; };
+		0143227F25559A5900666818 /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143227E25559A5900666818 /* AgendaVC.swift */; };
+		0143228225559A7900666818 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0143228125559A7900666818 /* Agenda.storyboard */; };
+		014322852555C30900666818 /* Boletim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014322842555C30900666818 /* Boletim.storyboard */; };
+		014322882555C32900666818 /* BoletimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014322872555C32900666818 /* BoletimVC.swift */; };
+		0144078D25A4F39200B40B2B /* HorariosTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0144078B25A4F39200B40B2B /* HorariosTBVC.xib */; };
+		0144078E25A4F39200B40B2B /* HorariosTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144078C25A4F39200B40B2B /* HorariosTBVC.swift */; };
+		0160D06225BE234700A563CB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D06125BE234700A563CB /* LoginVC.swift */; };
+		01F3871B2568A6E30037FB24 /* Horario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3871A2568A6E30037FB24 /* Horario.storyboard */; };
+		01F3871D2568ACA10037FB24 /* tipoensino.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A31D62566EFC200422DF3 /* tipoensino.json */; };
+		F3CD607A1109CAE6A34471A9 /* Pods_educasoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B4508FECC1F17F26035937 /* Pods_educasoft.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0109707E25638344001D8995 /* Disciplinas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disciplinas.swift; sourceTree = "<group>"; };
+		01097081256383DA001D8995 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; };
+		01097084256386B6001D8995 /* Aluno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aluno.swift; sourceTree = "<group>"; };
+		010970882563EF3A001D8995 /* Matricula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matricula.swift; sourceTree = "<group>"; };
+		0109708B2563F037001D8995 /* Situacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Situacao.swift; sourceTree = "<group>"; };
+		0109708E256571DF001D8995 /* HorariosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosVC.swift; sourceTree = "<group>"; };
+		011A31BD25669BEB00422DF3 /* agenda.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = agenda.json; sourceTree = "<group>"; };
+		011A31BE2566BD5D00422DF3 /* Agenda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agenda.swift; sourceTree = "<group>"; };
+		011A31C22566BE3800422DF3 /* Professor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Professor.swift; sourceTree = "<group>"; };
+		011A31C52566BE9600422DF3 /* Turma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turma.swift; sourceTree = "<group>"; };
+		011A31C82566BEC500422DF3 /* Horario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Horario.swift; sourceTree = "<group>"; };
+		011A31CB2566C07800422DF3 /* disciplinas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = disciplinas.json; sourceTree = "<group>"; };
+		011A31CD2566C1D500422DF3 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		011A31D02566CEFE00422DF3 /* Tipoensino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tipoensino.swift; sourceTree = "<group>"; };
+		011A31D62566EFC200422DF3 /* tipoensino.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = tipoensino.json; sourceTree = "<group>"; };
+		011A31DC2566F1CA00422DF3 /* pessoa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = pessoa.json; sourceTree = "<group>"; };
+		011A31DD2566FBF600422DF3 /* aluno.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = aluno.json; sourceTree = "<group>"; };
+		011A31DF256734DE00422DF3 /* AgendaTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaTBVC.xib; sourceTree = "<group>"; };
+		011A31E0256734DE00422DF3 /* AgendaTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaTBVC.swift; sourceTree = "<group>"; };
+		012A859E25555F2200B63E05 /* educasoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = educasoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		012A85A125555F2200B63E05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		012A85A325555F2200B63E05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		012A85A525555F2200B63E05 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		012A85A825555F2200B63E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		012A85AA25555F2500B63E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		012A85AD25555F2500B63E05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		012A85AF25555F2500B63E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		012A85B7255562DD00B63E05 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		012A85C325556C4700B63E05 /* HomeCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCVCell.xib; sourceTree = "<group>"; };
+		012A85C425556C4700B63E05 /* HomeCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVCell.swift; sourceTree = "<group>"; };
+		012A85CA25556DCC00B63E05 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		012A85CD25556F1500B63E05 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		013617242577B2360083E6D7 /* AgendaDetalheTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaDetalheTBVC.xib; sourceTree = "<group>"; };
+		013617252577B2360083E6D7 /* AgendaDetalheTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDetalheTBVC.swift; sourceTree = "<group>"; };
+		0136172E2577B3D70083E6D7 /* AgendaDetalheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDetalheVC.swift; sourceTree = "<group>"; };
+		0139EA2425C3474600CF8482 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0143227E25559A5900666818 /* AgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
+		0143228125559A7900666818 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
+		014322842555C30900666818 /* Boletim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Boletim.storyboard; sourceTree = "<group>"; };
+		014322872555C32900666818 /* BoletimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoletimVC.swift; sourceTree = "<group>"; };
+		0144078B25A4F39200B40B2B /* HorariosTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorariosTBVC.xib; sourceTree = "<group>"; };
+		0144078C25A4F39200B40B2B /* HorariosTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosTBVC.swift; sourceTree = "<group>"; };
+		0160D06125BE234700A563CB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		01F3871A2568A6E30037FB24 /* Horario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Horario.storyboard; sourceTree = "<group>"; };
+		A7D7BA585CA37C3C1EF1D4F5 /* Pods-educasoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-educasoft.debug.xcconfig"; path = "Target Support Files/Pods-educasoft/Pods-educasoft.debug.xcconfig"; sourceTree = "<group>"; };
+		B73BC9CC2FA333CBCEF2A6FE /* Pods-educasoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-educasoft.release.xcconfig"; path = "Target Support Files/Pods-educasoft/Pods-educasoft.release.xcconfig"; sourceTree = "<group>"; };
+		D1B4508FECC1F17F26035937 /* Pods_educasoft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_educasoft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012A859B25555F2200B63E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CD607A1109CAE6A34471A9 /* Pods_educasoft.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011A31B425669ADF00422DF3 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				0136172C2577B3930083E6D7 /* cells */,
+				0136172A2577B3440083E6D7 /* xibs */,
+				0143227E25559A5900666818 /* AgendaVC.swift */,
+				0136172E2577B3D70083E6D7 /* AgendaDetalheVC.swift */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		011A31B525669AE900422DF3 /* Boletim */ = {
+			isa = PBXGroup;
+			children = (
+				014322872555C32900666818 /* BoletimVC.swift */,
+			);
+			path = Boletim;
+			sourceTree = "<group>";
+		};
+		011A31B625669AF100422DF3 /* Horarios */ = {
+			isa = PBXGroup;
+			children = (
+				0144078A25A4F36700B40B2B /* xibs */,
+				0144078925A4F35F00B40B2B /* cells */,
+				0109708E256571DF001D8995 /* HorariosVC.swift */,
+			);
+			path = Horarios;
+			sourceTree = "<group>";
+		};
+		011A31B725669AF900422DF3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0136172D2577B3A60083E6D7 /* cells */,
+				0136172B2577B3520083E6D7 /* xibs */,
+				012A85A525555F2200B63E05 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		012A859525555F2200B63E05 = {
+			isa = PBXGroup;
+			children = (
+				012A85A025555F2200B63E05 /* educasoft */,
+				012A859F25555F2200B63E05 /* Products */,
+				0B910B2BB2D708C878D4C972 /* Pods */,
+				B0BED9D10378B610DF75F10F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		012A859F25555F2200B63E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				012A859E25555F2200B63E05 /* educasoft.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		012A85A025555F2200B63E05 /* educasoft */ = {
+			isa = PBXGroup;
+			children = (
+				012A85C925556DAA00B63E05 /* models */,
+				012A85BC25556A1E00B63E05 /* xibs */,
+				012A85BA2555641800B63E05 /* views */,
+				012A85B6255562A100B63E05 /* storyboards */,
+				012A85A125555F2200B63E05 /* AppDelegate.swift */,
+				012A85A325555F2200B63E05 /* SceneDelegate.swift */,
+				012A85AA25555F2500B63E05 /* Assets.xcassets */,
+				012A85AC25555F2500B63E05 /* LaunchScreen.storyboard */,
+				012A85AF25555F2500B63E05 /* Info.plist */,
+				0139EA2425C3474600CF8482 /* GoogleService-Info.plist */,
+			);
+			path = educasoft;
+			sourceTree = "<group>";
+		};
+		012A85B6255562A100B63E05 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				012A85A725555F2200B63E05 /* Main.storyboard */,
+				012A85B7255562DD00B63E05 /* Home.storyboard */,
+				012A85CD25556F1500B63E05 /* Perfil.storyboard */,
+				0143228125559A7900666818 /* Agenda.storyboard */,
+				014322842555C30900666818 /* Boletim.storyboard */,
+				01F3871A2568A6E30037FB24 /* Horario.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		012A85BA2555641800B63E05 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0160D05B25BE220700A563CB /* Login */,
+				011A31B725669AF900422DF3 /* Home */,
+				011A31B625669AF100422DF3 /* Horarios */,
+				011A31B525669AE900422DF3 /* Boletim */,
+				011A31B425669ADF00422DF3 /* Agenda */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		012A85BC25556A1E00B63E05 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		012A85C925556DAA00B63E05 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				011A31CB2566C07800422DF3 /* disciplinas.json */,
+				011A31D62566EFC200422DF3 /* tipoensino.json */,
+				011A31DC2566F1CA00422DF3 /* pessoa.json */,
+				011A31DD2566FBF600422DF3 /* aluno.json */,
+				011A31BD25669BEB00422DF3 /* agenda.json */,
+				012A85CA25556DCC00B63E05 /* Menu.swift */,
+				0109707E25638344001D8995 /* Disciplinas.swift */,
+				01097081256383DA001D8995 /* Pessoa.swift */,
+				01097084256386B6001D8995 /* Aluno.swift */,
+				010970882563EF3A001D8995 /* Matricula.swift */,
+				0109708B2563F037001D8995 /* Situacao.swift */,
+				011A31BE2566BD5D00422DF3 /* Agenda.swift */,
+				011A31C22566BE3800422DF3 /* Professor.swift */,
+				011A31C52566BE9600422DF3 /* Turma.swift */,
+				011A31C82566BEC500422DF3 /* Horario.swift */,
+				011A31CD2566C1D500422DF3 /* Usuario.swift */,
+				011A31D02566CEFE00422DF3 /* Tipoensino.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0136172A2577B3440083E6D7 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				011A31DF256734DE00422DF3 /* AgendaTBVC.xib */,
+				013617242577B2360083E6D7 /* AgendaDetalheTBVC.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		0136172B2577B3520083E6D7 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				012A85C325556C4700B63E05 /* HomeCVCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		0136172C2577B3930083E6D7 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				011A31E0256734DE00422DF3 /* AgendaTBVC.swift */,
+				013617252577B2360083E6D7 /* AgendaDetalheTBVC.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		0136172D2577B3A60083E6D7 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				012A85C425556C4700B63E05 /* HomeCVCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		0144078925A4F35F00B40B2B /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0144078C25A4F39200B40B2B /* HorariosTBVC.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		0144078A25A4F36700B40B2B /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				0144078B25A4F39200B40B2B /* HorariosTBVC.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		0160D05B25BE220700A563CB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0160D06125BE234700A563CB /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0B910B2BB2D708C878D4C972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7D7BA585CA37C3C1EF1D4F5 /* Pods-educasoft.debug.xcconfig */,
+				B73BC9CC2FA333CBCEF2A6FE /* Pods-educasoft.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0BED9D10378B610DF75F10F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1B4508FECC1F17F26035937 /* Pods_educasoft.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		012A859D25555F2200B63E05 /* educasoft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 012A85B225555F2500B63E05 /* Build configuration list for PBXNativeTarget "educasoft" */;
+			buildPhases = (
+				7699D1604423EF722745FAFF /* [CP] Check Pods Manifest.lock */,
+				012A859A25555F2200B63E05 /* Sources */,
+				012A859B25555F2200B63E05 /* Frameworks */,
+				012A859C25555F2200B63E05 /* Resources */,
+				0CD93F3BA9A5C6F8CDD24DEB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = educasoft;
+			productName = educasoft;
+			productReference = 012A859E25555F2200B63E05 /* educasoft.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		012A859625555F2200B63E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					012A859D25555F2200B63E05 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 012A859925555F2200B63E05 /* Build configuration list for PBXProject "educasoft" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 012A859525555F2200B63E05;
+			productRefGroup = 012A859F25555F2200B63E05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				012A859D25555F2200B63E05 /* educasoft */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		012A859C25555F2200B63E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012A85AE25555F2500B63E05 /* LaunchScreen.storyboard in Resources */,
+				0144078D25A4F39200B40B2B /* HorariosTBVC.xib in Resources */,
+				01F3871B2568A6E30037FB24 /* Horario.storyboard in Resources */,
+				011A31E1256734DE00422DF3 /* AgendaTBVC.xib in Resources */,
+				012A85AB25555F2500B63E05 /* Assets.xcassets in Resources */,
+				012A85A925555F2200B63E05 /* Main.storyboard in Resources */,
+				012A85B8255562DD00B63E05 /* Home.storyboard in Resources */,
+				012A85CE25556F1500B63E05 /* Perfil.storyboard in Resources */,
+				0139EA2525C3474600CF8482 /* GoogleService-Info.plist in Resources */,
+				014322852555C30900666818 /* Boletim.storyboard in Resources */,
+				0143228225559A7900666818 /* Agenda.storyboard in Resources */,
+				012A85C525556C4700B63E05 /* HomeCVCell.xib in Resources */,
+				011A31ED25688F3F00422DF3 /* agenda.json in Resources */,
+				013617262577B2360083E6D7 /* AgendaDetalheTBVC.xib in Resources */,
+				01F3871D2568ACA10037FB24 /* tipoensino.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD93F3BA9A5C6F8CDD24DEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7699D1604423EF722745FAFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-educasoft-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		012A859A25555F2200B63E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012A85A625555F2200B63E05 /* HomeVC.swift in Sources */,
+				01097085256386B6001D8995 /* Aluno.swift in Sources */,
+				0160D06225BE234700A563CB /* LoginVC.swift in Sources */,
+				012A85C625556C4700B63E05 /* HomeCVCell.swift in Sources */,
+				0143227F25559A5900666818 /* AgendaVC.swift in Sources */,
+				011A31D12566CEFE00422DF3 /* Tipoensino.swift in Sources */,
+				012A85A225555F2200B63E05 /* AppDelegate.swift in Sources */,
+				011A31BF2566BD5D00422DF3 /* Agenda.swift in Sources */,
+				01097082256383DA001D8995 /* Pessoa.swift in Sources */,
+				011A31C32566BE3800422DF3 /* Professor.swift in Sources */,
+				0109708C2563F037001D8995 /* Situacao.swift in Sources */,
+				0136172F2577B3D70083E6D7 /* AgendaDetalheVC.swift in Sources */,
+				011A31E2256734DE00422DF3 /* AgendaTBVC.swift in Sources */,
+				014322882555C32900666818 /* BoletimVC.swift in Sources */,
+				010970892563EF3A001D8995 /* Matricula.swift in Sources */,
+				011A31C92566BEC500422DF3 /* Horario.swift in Sources */,
+				012A85A425555F2200B63E05 /* SceneDelegate.swift in Sources */,
+				012A85CB25556DCC00B63E05 /* Menu.swift in Sources */,
+				0144078E25A4F39200B40B2B /* HorariosTBVC.swift in Sources */,
+				011A31CE2566C1D500422DF3 /* Usuario.swift in Sources */,
+				0109707F25638344001D8995 /* Disciplinas.swift in Sources */,
+				0109708F256571DF001D8995 /* HorariosVC.swift in Sources */,
+				013617272577B2360083E6D7 /* AgendaDetalheTBVC.swift in Sources */,
+				011A31C62566BE9600422DF3 /* Turma.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		012A85A725555F2200B63E05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012A85A825555F2200B63E05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		012A85AC25555F2500B63E05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				012A85AD25555F2500B63E05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		012A85B025555F2500B63E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		012A85B125555F2500B63E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		012A85B325555F2500B63E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7D7BA585CA37C3C1EF1D4F5 /* Pods-educasoft.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQH55VZR78;
+				INFOPLIST_FILE = educasoft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rodrigoventura.educasoft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		012A85B425555F2500B63E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73BC9CC2FA333CBCEF2A6FE /* Pods-educasoft.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQH55VZR78;
+				INFOPLIST_FILE = educasoft/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rodrigoventura.educasoft;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		012A859925555F2200B63E05 /* Build configuration list for PBXProject "educasoft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012A85B025555F2500B63E05 /* Debug */,
+				012A85B125555F2500B63E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		012A85B225555F2500B63E05 /* Build configuration list for PBXNativeTarget "educasoft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				012A85B325555F2500B63E05 /* Debug */,
+				012A85B425555F2500B63E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 012A859625555F2200B63E05 /* Project object */;
+}

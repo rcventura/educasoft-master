@@ -1,0 +1,24 @@
+{"disciplinas": [
+    {
+    "iddisciplina": 1
+    "coddisciplina": 001
+    "idtipoensino": 1
+    "descriao": "Matemática"
+    },
+    
+    {
+    "iddisciplina": 2
+    "coddisciplina": 002
+    "idtipoensino": 1
+    "descriao": "Português"
+    },
+    
+    {
+    "iddisciplina": 3
+    "coddisciplina": 003
+    "idtipoensino": 1
+    "descriao": "Histório"
+    }
+    
+]
+}

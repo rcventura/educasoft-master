@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AA4-1s-ZBt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Agenda-->
+        <scene sceneID="NvY-7i-HuM">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="GDe-bV-Ijz" customClass="AgendaVC" customModule="educasoft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0fk-Ih-Nhh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="AgendaTBVC" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2QO-ZN-zfM">
+                                <rect key="frame" x="0.0" y="441.5" width="414" height="371.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="s67-Ux-ePy">
+                                <rect key="frame" x="0.0" y="88" width="414" height="353.5"/>
+                                <locale key="locale" localeIdentifier="pt_BR"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mAl-6e-Sby"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2QO-ZN-zfM" firstAttribute="top" secondItem="s67-Ux-ePy" secondAttribute="bottom" id="FoO-dx-v20"/>
+                            <constraint firstItem="s67-Ux-ePy" firstAttribute="top" secondItem="mAl-6e-Sby" secondAttribute="top" id="JqU-Ze-FId"/>
+                            <constraint firstItem="s67-Ux-ePy" firstAttribute="trailing" secondItem="mAl-6e-Sby" secondAttribute="trailing" id="JzW-18-Tty"/>
+                            <constraint firstItem="s67-Ux-ePy" firstAttribute="leading" secondItem="mAl-6e-Sby" secondAttribute="leading" id="MkP-0F-Q0h"/>
+                            <constraint firstItem="2QO-ZN-zfM" firstAttribute="bottom" secondItem="mAl-6e-Sby" secondAttribute="bottom" id="VFg-sX-Wyc"/>
+                            <constraint firstItem="2QO-ZN-zfM" firstAttribute="leading" secondItem="mAl-6e-Sby" secondAttribute="leading" id="s2C-cW-nMl"/>
+                            <constraint firstItem="2QO-ZN-zfM" firstAttribute="trailing" secondItem="mAl-6e-Sby" secondAttribute="trailing" id="s3R-6h-TSp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Agenda" leftItemsSupplementBackButton="YES" id="rkI-xy-9yP">
+                        <barButtonItem key="backBarButtonItem" title=" " id="fEU-Nd-aTO"/>
+                        <barButtonItem key="leftBarButtonItem" image="arrow.left" catalog="system" id="ARn-TF-9Fe">
+                            <connections>
+                                <action selector="bntVoltarAC:" destination="GDe-bV-Ijz" id="SpB-Fu-USt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bntVoltar" destination="ARn-TF-9Fe" id="U9C-QH-rAo"/>
+                        <outlet property="calendarioAgenda" destination="s67-Ux-ePy" id="Jgh-Qz-WaO"/>
+                        <outlet property="tbvAgenda" destination="2QO-ZN-zfM" id="lue-Bd-AL0"/>
+                        <segue destination="KTM-lM-WKn" kind="show" identifier="AgendaDetalheVC" id="ZFX-uv-ZYR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1p-OX-Hyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220.289855072464" y="8.7053571428571423"/>
+        </scene>
+        <!--Agenda DetalheVC-->
+        <scene sceneID="Na3-us-ePg">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="KTM-lM-WKn" customClass="AgendaDetalheVC" customModule="educasoft" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Fr-n0-sAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xgA-lE-2dn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nDP-lH-dSg"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nDP-lH-dSg" firstAttribute="bottom" secondItem="xgA-lE-2dn" secondAttribute="bottom" id="8kh-kH-N30"/>
+                            <constraint firstItem="nDP-lH-dSg" firstAttribute="trailing" secondItem="xgA-lE-2dn" secondAttribute="trailing" id="F5I-tG-vF5"/>
+                            <constraint firstItem="xgA-lE-2dn" firstAttribute="leading" secondItem="nDP-lH-dSg" secondAttribute="leading" id="K1Q-2i-gVJ"/>
+                            <constraint firstItem="xgA-lE-2dn" firstAttribute="top" secondItem="nDP-lH-dSg" secondAttribute="top" id="d9G-9w-igE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qg5-5l-Old"/>
+                    <connections>
+                        <outlet property="tbvAgendaDetail" destination="xgA-lE-2dn" id="de7-Gk-4Jj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OnX-Li-wgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3695" y="79"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y7R-Uu-HWx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" toolbarHidden="NO" id="AA4-1s-ZBt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hX7-NL-N0k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="afe-zJ-ard">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="GDe-bV-Ijz" kind="relationship" relationship="rootViewController" id="sPq-rk-Z8x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFx-Yv-gUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1310.144927536232" y="8.7053571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

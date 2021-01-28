@@ -1,0 +1,6 @@
+framework module Pods_educasoft {
+  umbrella header "Pods-educasoft-umbrella.h"
+
+  export *
+  module * { export * }
+}

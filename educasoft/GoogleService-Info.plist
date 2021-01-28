@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>877889848084-i0er5b1b3qh52tn34qnbhuaiglv5inlm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.877889848084-i0er5b1b3qh52tn34qnbhuaiglv5inlm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAgFkKmcFrUFFUYypGsH3dnKQ7jZdFVWpA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>877889848084</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rodrigoventura.educasoft</string>
+	<key>PROJECT_ID</key>
+	<string>educasoft-f8f10</string>
+	<key>STORAGE_BUCKET</key>
+	<string>educasoft-f8f10.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:877889848084:ios:ecedb19bb3212ad645b801</string>
+</dict>
+</plist>

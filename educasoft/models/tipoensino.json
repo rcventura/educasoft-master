@@ -1,0 +1,18 @@
+{"tipoensino": [
+    {
+        "idtipoensino": 1,
+        "codtipoensino": 001,
+        "descricao": "Ensino Básico"
+    },
+    {
+        "idtipoensino": 2,
+        "codtipoensino": 002,
+        "descricao": "Ensino Fundamental"
+    },
+    {
+        "idtipoensino": 3,
+        "codtipoensino": 003,
+        "descricao": "Ensino Superior"
+    }
+]
+}
