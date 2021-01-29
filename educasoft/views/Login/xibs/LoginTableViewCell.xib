@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LoginTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginTableViewCell" rowHeight="745" id="CE5-s0-oFs" customClass="LoginTableViewCell" customModule="educasoft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="745"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CE5-s0-oFs" id="6Cx-GY-Nqd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="745"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dGM-Gi-ZcF">
+                        <rect key="frame" x="32" y="267" width="350" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mXy-VT-t0f">
+                        <rect key="frame" x="32" y="326" width="350" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x0-p5-VGf">
+                        <rect key="frame" x="132" y="417" width="150" height="30"/>
+                        <color key="backgroundColor" red="0.30965032310000001" green="0.44521366769999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="emC-ar-UnM"/>
+                        </constraints>
+                        <state key="normal" title="Entrar">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mXy-VT-t0f" firstAttribute="top" secondItem="dGM-Gi-ZcF" secondAttribute="bottom" constant="25" id="84A-tx-2OT"/>
+                    <constraint firstItem="6x0-p5-VGf" firstAttribute="top" secondItem="mXy-VT-t0f" secondAttribute="bottom" constant="57" id="D2R-ry-VY0"/>
+                    <constraint firstItem="dGM-Gi-ZcF" firstAttribute="leading" secondItem="6Cx-GY-Nqd" secondAttribute="leading" constant="32" id="ONa-16-sZI"/>
+                    <constraint firstAttribute="trailing" secondItem="dGM-Gi-ZcF" secondAttribute="trailing" constant="32" id="PeC-AB-qas"/>
+                    <constraint firstAttribute="trailing" secondItem="6x0-p5-VGf" secondAttribute="trailing" constant="132" id="TRw-Y4-3I6"/>
+                    <constraint firstItem="mXy-VT-t0f" firstAttribute="leading" secondItem="6Cx-GY-Nqd" secondAttribute="leading" constant="32" id="ThV-dx-4Eb"/>
+                    <constraint firstAttribute="trailing" secondItem="mXy-VT-t0f" secondAttribute="trailing" constant="32" id="cc0-qr-06e"/>
+                    <constraint firstItem="dGM-Gi-ZcF" firstAttribute="top" secondItem="6Cx-GY-Nqd" secondAttribute="top" constant="267" id="cfU-XN-Syp"/>
+                    <constraint firstItem="6x0-p5-VGf" firstAttribute="leading" secondItem="6Cx-GY-Nqd" secondAttribute="leading" constant="132" id="l9N-mz-5f1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.60502450969999999" green="0.65024121550000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="53.623188405797109" y="-35.825892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
