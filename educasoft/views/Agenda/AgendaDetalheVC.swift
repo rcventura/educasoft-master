@@ -77,9 +77,9 @@ extension AgendaDetalheVC: UITableViewDataSource {
 
         let cell: AgendaDetalheTBVC? = tableView.dequeueReusableCell(withIdentifier: "AgendaDetalheTBVC", for: indexPath) as? AgendaDetalheTBVC
 
-        let detailmsg = self.agendaElement[indexPath.row]
+//        let detailmsg = self.agendaElement[indexPath.row]
         //cell?.setupdetalhe(value: self.agendaElement[indexPath.row])
-        cell?.lbDatailDisciplina.text = detailmsg.iddisciplina
+        //cell?.lbDatailDisciplina.text = detailmsg.iddisciplina
         
         return cell ?? UITableViewCell()
     }
