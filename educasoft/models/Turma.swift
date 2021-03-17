@@ -9,7 +9,7 @@ import Foundation
 
 struct Turma: Codable {
     let idturma: Int?
-    let iddisciplina: Disciplinas?
-    let idhorarios: Horario?
-    let idaluno: Aluno?
+    let coddisciplina: Disciplinas?
+    let codhorario: Horario?
+    let raaluno: Aluno?
 }

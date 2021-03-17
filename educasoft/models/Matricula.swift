@@ -9,7 +9,7 @@ import Foundation
 
 struct Matricula: Codable {
     let idmatricula: Int?
-    let idturma: Turma?
+    let codturma: Turma?
     let dtmatricula: String?
     let idsituacao: Situacao?
     let idtipoensino: Tipoensino?

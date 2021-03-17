@@ -25,7 +25,7 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var iconsCV: UICollectionView!
     
-    var arrayIcons: [Menu] = [Menu(id: 1, descricao: "Agenda", iconImage: "agenda"),
+    var arrayIcons: [Menu] = [Menu(id: 1, descricao: "Agenda",                                    iconImage: "agenda"),
                               Menu(id: 2, descricao: "Horarios", iconImage: "horarios"),
                               Menu(id: 3, descricao: "Boletim", iconImage: "boletim"),
                               Menu(id: 4, descricao: "Faltas", iconImage: "faltas"),
@@ -37,14 +37,36 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.getAlunos()
         
         self.iconsCV.register(UINib(nibName: "HomeCVCell", bundle: nil), forCellWithReuseIdentifier: "HomeCVCell")
 
         self.titleHome.title = "Centro Educacional Geração"
         
-        
         self.iconsCV.delegate = self
         self.iconsCV.dataSource = self
+    }
+    
+    func getAlunos() {
+        
+        let session: URLSession = URLSession.shared
+        
+        let url: URL? = URL(string: "http://127.0.0.1:3000/alunos")
+        
+        if let _url = url {
+            let task: URLSessionTask = session.dataTask(with: _url) { (data, response, error) in
+            do {
+                let json = try JSONSerialization.jsonObject(with: data ?? Data(), options: [])
+                print("OKKKKKKKKKKKKKKKKK")
+                print(json)
+            } catch {
+                print("ERROOOOOOOOOOOOOOO")
+                print(error)
+            }
+                
+        }
+            task.resume()
+        }
         
         
     }

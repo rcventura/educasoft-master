@@ -8,7 +8,10 @@
 import Foundation
 
 struct Aluno: Codable {
+    let codaluno:  Int?
+    let codpessoa: Pessoa?
+    let nome:  String?
     let raaluno: Int?
-    let idpessoa: Pessoa?
+    
 }
 

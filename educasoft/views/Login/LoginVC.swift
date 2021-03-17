@@ -10,17 +10,23 @@ import Firebase
 
 class LoginVC: UIViewController {
 
+    
+
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var bntLogin: UIButton!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         self.bntLogin.layer.cornerRadius = 10
         
+        
     }
+
     @IBAction func bntLoginAC(_ sender: UIButton) {
         if let email = self.userTextField.text, let password = self.passwordTextField.text {
             Auth.auth().signIn(withEmail: email, password: password) {
@@ -34,4 +40,5 @@ class LoginVC: UIViewController {
             }
         }
     }
+
 }

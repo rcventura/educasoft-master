@@ -8,10 +8,9 @@
 import Foundation
 
 struct Professor: Codable {
-    let idprofessor: Int?
     let codprofessor: Int?
-    let idpessoa: Pessoa?
-    let idturma: Turma?
-    let iddisciplina: Disciplinas?
+    let codpessoa: Pessoa?
+    let codturma: Turma?
+    let coddisciplina: Disciplinas?
 
 }

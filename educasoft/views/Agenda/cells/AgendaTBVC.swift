@@ -37,8 +37,8 @@ class AgendaTBVC: UITableViewCell {
         if let _value = value {
             //self.agenda = value
             self.delegate = delegate
-            self.lbNomeProfessor.text = _value.idprofessor
-            self.lbNomeMateria.text = _value.iddisciplina
+//            self.lbNomeProfessor.text = _value.codprofessor
+  //          self.lbNomeMateria.text = _value.coddisciplina
 
         }
         }

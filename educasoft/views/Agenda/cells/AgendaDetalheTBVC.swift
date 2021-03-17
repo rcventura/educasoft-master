@@ -27,8 +27,8 @@ class AgendaDetalheTBVC: UITableViewCell {
     
     func setupdetalhe(value: AgendaElement?) {
         if let _value = value {
-            self.lbDetailNomeProfessor.text = _value.idprofessor
-            self.lbDatailDisciplina.text = _value.iddisciplina
+           // self.lbDetailNomeProfessor = _value.codprofessor
+           // self.lbDatailDisciplina.text = _value.coddisciplina
             
         }
         

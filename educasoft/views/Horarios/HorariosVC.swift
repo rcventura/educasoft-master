@@ -12,17 +12,18 @@ class HorariosVC: UIViewController {
     @IBOutlet weak var navBarTitle: UINavigationItem!
     
     @IBOutlet weak var tbvHorario: UITableView!
-    
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        
         
         // Do any additional setup after loading the view.
         
-        self.tbvHorario.register(UINib(nibName: "HorariosTBVC", bundle: nil), forCellReuseIdentifier: "HorariosTBVC")
+//        self.tbvHorario.register(UINib(nibName: "HorariosTBVC", bundle: nil), forCellReuseIdentifier: "HorariosTBVC")
         
-        self.tbvHorario.delegate = self
-        self.tbvHorario.dataSource = self
+//        self.tbvHorario.delegate = self
+//        self.tbvHorario.dataSource = self
     }
     
 
@@ -42,24 +43,24 @@ class HorariosVC: UIViewController {
     */
 
 }
-extension HorariosVC: UITableViewDelegate {
-    
-    
-}
+//extension HorariosVC: UITableViewDelegate {
+//    
+//
+//}
 
-extension HorariosVC: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
-    }
+//extension HorariosVC: UITableViewDataSource {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 2
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//
+//
+//        let cellH: HorariosTBVC? = tableView.dequeueReusableCell(withIdentifier: "HorariosTBVC", for: indexPath) as? HorariosTBVC
+//        return cellH ?? UITableViewCell()
+//
+//    }
+//
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
-        let cellH: HorariosTBVC? = tableView.dequeueReusableCell(withIdentifier: "HorariosTBVC", for: indexPath) as? HorariosTBVC
-        return cellH ?? UITableViewCell()
-        
-    }
     
-    
-    
-}
+

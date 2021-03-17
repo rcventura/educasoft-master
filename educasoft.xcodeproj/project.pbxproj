@@ -33,10 +33,13 @@
 		012A85C625556C4700B63E05 /* HomeCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85C425556C4700B63E05 /* HomeCVCell.swift */; };
 		012A85CB25556DCC00B63E05 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A85CA25556DCC00B63E05 /* Menu.swift */; };
 		012A85CE25556F1500B63E05 /* Perfil.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 012A85CD25556F1500B63E05 /* Perfil.storyboard */; };
+		0130633425D14BD40072E4C0 /* PerfilVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0130633325D14BD40072E4C0 /* PerfilVC.swift */; };
+		0134D0802600324200B539B2 /* AgendaWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0134D07F2600324200B539B2 /* AgendaWorker.swift */; };
 		013617262577B2360083E6D7 /* AgendaDetalheTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 013617242577B2360083E6D7 /* AgendaDetalheTBVC.xib */; };
 		013617272577B2360083E6D7 /* AgendaDetalheTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013617252577B2360083E6D7 /* AgendaDetalheTBVC.swift */; };
 		0136172F2577B3D70083E6D7 /* AgendaDetalheVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0136172E2577B3D70083E6D7 /* AgendaDetalheVC.swift */; };
 		0139EA2525C3474600CF8482 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0139EA2425C3474600CF8482 /* GoogleService-Info.plist */; };
+		013FD76F25FBE80200BBB4EF /* AgendaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013FD76E25FBE80200BBB4EF /* AgendaController.swift */; };
 		0143227F25559A5900666818 /* AgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0143227E25559A5900666818 /* AgendaVC.swift */; };
 		0143228225559A7900666818 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0143228125559A7900666818 /* Agenda.storyboard */; };
 		014322852555C30900666818 /* Boletim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014322842555C30900666818 /* Boletim.storyboard */; };
@@ -82,10 +85,13 @@
 		012A85C425556C4700B63E05 /* HomeCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCVCell.swift; sourceTree = "<group>"; };
 		012A85CA25556DCC00B63E05 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		012A85CD25556F1500B63E05 /* Perfil.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Perfil.storyboard; sourceTree = "<group>"; };
+		0130633325D14BD40072E4C0 /* PerfilVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilVC.swift; sourceTree = "<group>"; };
+		0134D07F2600324200B539B2 /* AgendaWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaWorker.swift; sourceTree = "<group>"; };
 		013617242577B2360083E6D7 /* AgendaDetalheTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaDetalheTBVC.xib; sourceTree = "<group>"; };
 		013617252577B2360083E6D7 /* AgendaDetalheTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDetalheTBVC.swift; sourceTree = "<group>"; };
 		0136172E2577B3D70083E6D7 /* AgendaDetalheVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaDetalheVC.swift; sourceTree = "<group>"; };
 		0139EA2425C3474600CF8482 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		013FD76E25FBE80200BBB4EF /* AgendaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaController.swift; sourceTree = "<group>"; };
 		0143227E25559A5900666818 /* AgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaVC.swift; sourceTree = "<group>"; };
 		0143228125559A7900666818 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		014322842555C30900666818 /* Boletim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Boletim.storyboard; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		011A31B425669ADF00422DF3 /* Agenda */ = {
 			isa = PBXGroup;
 			children = (
+				013FD75A25FBE52E00BBB4EF /* controller */,
 				0136172C2577B3930083E6D7 /* cells */,
 				0136172A2577B3440083E6D7 /* xibs */,
 				0143227E25559A5900666818 /* AgendaVC.swift */,
@@ -125,6 +132,7 @@
 		011A31B525669AE900422DF3 /* Boletim */ = {
 			isa = PBXGroup;
 			children = (
+				013FD75B25FBE55100BBB4EF /* controller */,
 				014322872555C32900666818 /* BoletimVC.swift */,
 			);
 			path = Boletim;
@@ -133,6 +141,7 @@
 		011A31B625669AF100422DF3 /* Horarios */ = {
 			isa = PBXGroup;
 			children = (
+				013FD75C25FBE56000BBB4EF /* controller */,
 				0144078A25A4F36700B40B2B /* xibs */,
 				0144078925A4F35F00B40B2B /* cells */,
 				0109708E256571DF001D8995 /* HorariosVC.swift */,
@@ -171,8 +180,8 @@
 		012A85A025555F2200B63E05 /* educasoft */ = {
 			isa = PBXGroup;
 			children = (
+				0134D07E260030B900B539B2 /* Network */,
 				012A85C925556DAA00B63E05 /* models */,
-				012A85BC25556A1E00B63E05 /* xibs */,
 				012A85BA2555641800B63E05 /* views */,
 				012A85B6255562A100B63E05 /* storyboards */,
 				012A85A125555F2200B63E05 /* AppDelegate.swift */,
@@ -201,6 +210,7 @@
 		012A85BA2555641800B63E05 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				0130633225D14B9D0072E4C0 /* Perfil */,
 				0160D05B25BE220700A563CB /* Login */,
 				011A31B725669AF900422DF3 /* Home */,
 				011A31B625669AF100422DF3 /* Horarios */,
@@ -208,13 +218,6 @@
 				011A31B425669ADF00422DF3 /* Agenda */,
 			);
 			path = views;
-			sourceTree = "<group>";
-		};
-		012A85BC25556A1E00B63E05 /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = xibs;
 			sourceTree = "<group>";
 		};
 		012A85C925556DAA00B63E05 /* models */ = {
@@ -239,6 +242,22 @@
 				011A31D02566CEFE00422DF3 /* Tipoensino.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		0130633225D14B9D0072E4C0 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				0130633325D14BD40072E4C0 /* PerfilVC.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		0134D07E260030B900B539B2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0134D07F2600324200B539B2 /* AgendaWorker.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		0136172A2577B3440083E6D7 /* xibs */ = {
@@ -273,6 +292,28 @@
 				012A85C425556C4700B63E05 /* HomeCVCell.swift */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		013FD75A25FBE52E00BBB4EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				013FD76E25FBE80200BBB4EF /* AgendaController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		013FD75B25FBE55100BBB4EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		013FD75C25FBE56000BBB4EF /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		0144078925A4F35F00B40B2B /* cells */ = {
@@ -344,6 +385,7 @@
 				012A859B25555F2200B63E05 /* Frameworks */,
 				012A859C25555F2200B63E05 /* Resources */,
 				0CD93F3BA9A5C6F8CDD24DEB /* [CP] Embed Pods Frameworks */,
+				17BD99FB903206587C93F020 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -429,6 +471,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		17BD99FB903206587C93F020 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-educasoft/Pods-educasoft-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7699D1604423EF722745FAFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,6 +523,7 @@
 				012A85C625556C4700B63E05 /* HomeCVCell.swift in Sources */,
 				0143227F25559A5900666818 /* AgendaVC.swift in Sources */,
 				011A31D12566CEFE00422DF3 /* Tipoensino.swift in Sources */,
+				0130633425D14BD40072E4C0 /* PerfilVC.swift in Sources */,
 				012A85A225555F2200B63E05 /* AppDelegate.swift in Sources */,
 				011A31BF2566BD5D00422DF3 /* Agenda.swift in Sources */,
 				01097082256383DA001D8995 /* Pessoa.swift in Sources */,
@@ -472,8 +532,10 @@
 				0136172F2577B3D70083E6D7 /* AgendaDetalheVC.swift in Sources */,
 				011A31E2256734DE00422DF3 /* AgendaTBVC.swift in Sources */,
 				014322882555C32900666818 /* BoletimVC.swift in Sources */,
+				013FD76F25FBE80200BBB4EF /* AgendaController.swift in Sources */,
 				010970892563EF3A001D8995 /* Matricula.swift in Sources */,
 				011A31C92566BEC500422DF3 /* Horario.swift in Sources */,
+				0134D0802600324200B539B2 /* AgendaWorker.swift in Sources */,
 				012A85A425555F2200B63E05 /* SceneDelegate.swift in Sources */,
 				012A85CB25556DCC00B63E05 /* Menu.swift in Sources */,
 				0144078E25A4F39200B40B2B /* HorariosTBVC.swift in Sources */,
@@ -632,14 +694,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQH55VZR78;
 				INFOPLIST_FILE = educasoft/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rodrigoventura.educasoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -652,14 +716,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQH55VZR78;
 				INFOPLIST_FILE = educasoft/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rodrigoventura.educasoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

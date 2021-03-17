@@ -12,11 +12,11 @@ struct Agenda: Codable {
 }
 
 struct AgendaElement: Codable {
-    let idagenda: String?
-    let iddisciplina: String?
-    let raaluno: String?
-    let idprofessor: String?
-    let descricao: String?
-    let dtlancamento: String?
-    
+    let codagenda: Int?
+    let codprofessor: Int?
+    let codaluno: Int?
+    let coddisciplina: Int?
+    let datalancamento: String?
+    let mensagem: String?
 }
+

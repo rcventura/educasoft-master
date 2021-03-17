@@ -1,46 +1,46 @@
 {"agendas": [{
-    "idagenda": "1",
-    "iddisciplina": "Matemática",
+    "codagenda": 1,
+    "coddisciplina": 001,
     "raaluno": "Joao",
     "idprofessor": "Rodrigo Ventura",
     "descricao": "O Aluno não fez o dever de casa O Aluno não fez o dever de casa O Aluno não fez o dever de casa O Aluno não fez o dever de casa O Aluno não fez o dever de casa O Aluno não fez o dever de casa",
     "dtlancamento": "15/11/2020"
 },
 {
-    "idagenda": "2",
-    "iddisciplina": "Portugues",
+    "codagenda": 2,
+    "iddisciplina": 002,
     "raaluno": "Fulano",
     "idprofessor": "Tatiana Ventura",
     "descricao": "O Aluno foi para diretoria",
     "dtlancamento": "15/11/2020"
 },
 {
-    "idagenda": "3",
-    "iddisciplina": "Física",
+    "codagenda": 3,
+    "iddisciplina": 003,
     "raaluno": "Beutrano",
     "idprofessor": "Rodrigo Ventura",
     "descricao": "O Aluno não fez o dever de casa",
     "dtlancamento": "15/11/2020"
 },
 {
-    "idagenda": "4",
-    "iddisciplina": "Física",
+    "codagenda": 4,
+    "iddisciplina": 001,
     "raaluno": "Beutrano",
     "idprofessor": "Rodrigo Ventura",
     "descricao": "O Aluno não fez o dever de casa",
     "dtlancamento": "15/11/2020"
 },
 {
-    "idagenda": "5",
-    "iddisciplina": "Física",
+    "codagenda": 5,
+    "iddisciplina": 002,
     "raaluno": "Beutrano",
     "idprofessor": "Rodrigo Ventura",
     "descricao": "O Aluno não fez o dever de casa",
     "dtlancamento": "15/11/2020"
 },
 {
-    "idagenda": "6",
-    "iddisciplina": "Física",
+    "codagenda": 6,
+    "iddisciplina": 003,
     "raaluno": "Beutrano",
     "idprofessor": "Rodrigo Ventura",
     "descricao": "O Aluno não fez o dever de casa",

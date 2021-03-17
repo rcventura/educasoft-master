@@ -6,6 +6,8 @@ target 'educasoft' do
   use_frameworks!
   
   pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+  pod 'lottie-ios', '~> 3.2'
 
   # Pods for educasoft
 

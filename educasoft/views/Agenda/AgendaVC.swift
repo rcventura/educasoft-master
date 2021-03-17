@@ -7,52 +7,44 @@
 
 import UIKit
 
-
-
 class AgendaVC: UIViewController {
     
 
     @IBOutlet weak var calendarioAgenda: UIDatePicker!
     @IBOutlet weak var tbvAgenda: UITableView!
     @IBOutlet weak var bntVoltar: UIBarButtonItem!
-    
-    var arrayLancamentos:[AgendaElement] = []
-    
-    //private var agenda: Agenda?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-        self.arrayLancamentos = self.registroAgenda() ?? []
-
+    //private var agenda: Agenda?
+    private var controller: AgendaController = AgendaController()
+    //private var controllerWorker: AgendaWorker = AgendaWorker()
+    
+    private func configDatePicker() {
+        self.calendarioAgenda.layer.cornerRadius = 10
+        self.calendarioAgenda.backgroundColor = UIColor.white
+    }
+    
+    private func configTableView() {
+        
         self.tbvAgenda.register(UINib(nibName: "AgendaTBVC", bundle: nil), forCellReuseIdentifier: "AgendaTBVC")
 
         self.tbvAgenda.delegate = self
         self.tbvAgenda.dataSource = self
         
-        self.calendarioAgenda.layer.cornerRadius = 10
-        self.calendarioAgenda.backgroundColor = UIColor.white
-        
     }
     
-    private func registroAgenda() -> [AgendaElement]? {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        if let path = Bundle.main.path(forResource: "agenda", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                
-                let agenda = try JSONDecoder().decode(Agenda.self, from: data)
-                print("*****\(agenda)")
-                return agenda.agendas
-            } catch {
-                print("deu ruim")
-                return nil
+        self.configDatePicker()
+        self.configTableView()
+        
+        AgendaWorker().getAgendaByAluno(codagenda: 1, codaluno: 1) { (agendaElement, error) in
+            if let _agendaElement = agendaElement {
+                print("*****************************")
+                print(_agendaElement.codagenda)
             }
         }
-            return nil
     }
-
-    
     
     /*
     // MARK: - Navigation
@@ -69,8 +61,11 @@ class AgendaVC: UIViewController {
 }
 extension AgendaVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        //self.controller.loadAgendaElement(index: indexPath.row)
         
-        self.agendaSelecionada(id: self.arrayLancamentos[indexPath.row].idprofessor ?? "", disciplina: self.arrayLancamentos[indexPath.row].iddisciplina ?? "")
+        
+        //self.agendaSelecionada(id: self.controller.agendaElement?.codprofessor, disciplina;: self.controller.agendaElement?.coddisciplina)
 
         //self.performSegue(withIdentifier: "AgendaDetalheVC", sender: self.arrayLancamentos[indexPath.row])
         
@@ -83,14 +78,16 @@ extension AgendaVC: UITableViewDelegate{
 extension AgendaVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.arrayLancamentos.count
+        return self.controller.numberOfRows
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell: AgendaTBVC? = tableView.dequeueReusableCell(withIdentifier: "AgendaTBVC", for: indexPath) as? AgendaTBVC
 
-        cell?.setup(value: self.arrayLancamentos[indexPath.row], delegate: self)
+        self.controller.loadAgendaElement(index: indexPath.row)
+        
+        cell?.setup(value:self.controller.agendaElement, delegate: self)
         
         return cell ?? UITableViewCell()
         
