@@ -44,9 +44,14 @@
 		0143228225559A7900666818 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0143228125559A7900666818 /* Agenda.storyboard */; };
 		014322852555C30900666818 /* Boletim.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014322842555C30900666818 /* Boletim.storyboard */; };
 		014322882555C32900666818 /* BoletimVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014322872555C32900666818 /* BoletimVC.swift */; };
-		0144078D25A4F39200B40B2B /* HorariosTBVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0144078B25A4F39200B40B2B /* HorariosTBVC.xib */; };
-		0144078E25A4F39200B40B2B /* HorariosTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0144078C25A4F39200B40B2B /* HorariosTBVC.swift */; };
 		0160D06225BE234700A563CB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0160D06125BE234700A563CB /* LoginVC.swift */; };
+		0194C5832627B99B00263FFE /* registroleitura.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0194C5812627B99B00263FFE /* registroleitura.xcdatamodeld */; };
+		01A6022D2627F7B50068AE86 /* FaltasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6022C2627F7B50068AE86 /* FaltasVC.swift */; };
+		01A602312627F7F10068AE86 /* OcorrenciaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A602302627F7F10068AE86 /* OcorrenciaVC.swift */; };
+		01A602362627F82A0068AE86 /* ComunicadoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A602352627F82A0068AE86 /* ComunicadoVC.swift */; };
+		01A6023A2627F9900068AE86 /* Faltas.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A602392627F9900068AE86 /* Faltas.storyboard */; };
+		01A6023D2627FB5A0068AE86 /* Ocorrencia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01A6023C2627FB5A0068AE86 /* Ocorrencia.storyboard */; };
+		01B22366262860890004401A /* Comunicado.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B22365262860890004401A /* Comunicado.storyboard */; };
 		01F3871B2568A6E30037FB24 /* Horario.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F3871A2568A6E30037FB24 /* Horario.storyboard */; };
 		01F3871D2568ACA10037FB24 /* tipoensino.json in Resources */ = {isa = PBXBuildFile; fileRef = 011A31D62566EFC200422DF3 /* tipoensino.json */; };
 		F3CD607A1109CAE6A34471A9 /* Pods_educasoft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B4508FECC1F17F26035937 /* Pods_educasoft.framework */; };
@@ -96,9 +101,14 @@
 		0143228125559A7900666818 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		014322842555C30900666818 /* Boletim.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Boletim.storyboard; sourceTree = "<group>"; };
 		014322872555C32900666818 /* BoletimVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoletimVC.swift; sourceTree = "<group>"; };
-		0144078B25A4F39200B40B2B /* HorariosTBVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorariosTBVC.xib; sourceTree = "<group>"; };
-		0144078C25A4F39200B40B2B /* HorariosTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosTBVC.swift; sourceTree = "<group>"; };
 		0160D06125BE234700A563CB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0194C5822627B99B00263FFE /* registroleitura.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = registroleitura.xcdatamodel; sourceTree = "<group>"; };
+		01A6022C2627F7B50068AE86 /* FaltasVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaltasVC.swift; sourceTree = "<group>"; };
+		01A602302627F7F10068AE86 /* OcorrenciaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcorrenciaVC.swift; sourceTree = "<group>"; };
+		01A602352627F82A0068AE86 /* ComunicadoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComunicadoVC.swift; sourceTree = "<group>"; };
+		01A602392627F9900068AE86 /* Faltas.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Faltas.storyboard; sourceTree = "<group>"; };
+		01A6023C2627FB5A0068AE86 /* Ocorrencia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ocorrencia.storyboard; sourceTree = "<group>"; };
+		01B22365262860890004401A /* Comunicado.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Comunicado.storyboard; sourceTree = "<group>"; };
 		01F3871A2568A6E30037FB24 /* Horario.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Horario.storyboard; sourceTree = "<group>"; };
 		A7D7BA585CA37C3C1EF1D4F5 /* Pods-educasoft.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-educasoft.debug.xcconfig"; path = "Target Support Files/Pods-educasoft/Pods-educasoft.debug.xcconfig"; sourceTree = "<group>"; };
 		B73BC9CC2FA333CBCEF2A6FE /* Pods-educasoft.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-educasoft.release.xcconfig"; path = "Target Support Files/Pods-educasoft/Pods-educasoft.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +213,9 @@
 				0143228125559A7900666818 /* Agenda.storyboard */,
 				014322842555C30900666818 /* Boletim.storyboard */,
 				01F3871A2568A6E30037FB24 /* Horario.storyboard */,
+				01A602392627F9900068AE86 /* Faltas.storyboard */,
+				01A6023C2627FB5A0068AE86 /* Ocorrencia.storyboard */,
+				01B22365262860890004401A /* Comunicado.storyboard */,
 			);
 			path = storyboards;
 			sourceTree = "<group>";
@@ -210,6 +223,9 @@
 		012A85BA2555641800B63E05 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				01A602342627F80B0068AE86 /* Comunicado */,
+				01A6022F2627F7D10068AE86 /* Ocorrencia */,
+				01A602292627F7760068AE86 /* Faltas */,
 				0130633225D14B9D0072E4C0 /* Perfil */,
 				0160D05B25BE220700A563CB /* Login */,
 				011A31B725669AF900422DF3 /* Home */,
@@ -223,6 +239,7 @@
 		012A85C925556DAA00B63E05 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				0194C5812627B99B00263FFE /* registroleitura.xcdatamodeld */,
 				011A31CB2566C07800422DF3 /* disciplinas.json */,
 				011A31D62566EFC200422DF3 /* tipoensino.json */,
 				011A31DC2566F1CA00422DF3 /* pessoa.json */,
@@ -319,7 +336,6 @@
 		0144078925A4F35F00B40B2B /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				0144078C25A4F39200B40B2B /* HorariosTBVC.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -327,7 +343,6 @@
 		0144078A25A4F36700B40B2B /* xibs */ = {
 			isa = PBXGroup;
 			children = (
-				0144078B25A4F39200B40B2B /* HorariosTBVC.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -354,6 +369,38 @@
 				0160D06125BE234700A563CB /* LoginVC.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		01A602292627F7760068AE86 /* Faltas */ = {
+			isa = PBXGroup;
+			children = (
+				01A6022A2627F7890068AE86 /* controller */,
+				01A6022C2627F7B50068AE86 /* FaltasVC.swift */,
+			);
+			path = Faltas;
+			sourceTree = "<group>";
+		};
+		01A6022A2627F7890068AE86 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		01A6022F2627F7D10068AE86 /* Ocorrencia */ = {
+			isa = PBXGroup;
+			children = (
+				01A602302627F7F10068AE86 /* OcorrenciaVC.swift */,
+			);
+			path = Ocorrencia;
+			sourceTree = "<group>";
+		};
+		01A602342627F80B0068AE86 /* Comunicado */ = {
+			isa = PBXGroup;
+			children = (
+				01A602352627F82A0068AE86 /* ComunicadoVC.swift */,
+			);
+			path = Comunicado;
 			sourceTree = "<group>";
 		};
 		0B910B2BB2D708C878D4C972 /* Pods */ = {
@@ -434,9 +481,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				012A85AE25555F2500B63E05 /* LaunchScreen.storyboard in Resources */,
-				0144078D25A4F39200B40B2B /* HorariosTBVC.xib in Resources */,
+				01A6023D2627FB5A0068AE86 /* Ocorrencia.storyboard in Resources */,
 				01F3871B2568A6E30037FB24 /* Horario.storyboard in Resources */,
+				01A6023A2627F9900068AE86 /* Faltas.storyboard in Resources */,
 				011A31E1256734DE00422DF3 /* AgendaTBVC.xib in Resources */,
+				01B22366262860890004401A /* Comunicado.storyboard in Resources */,
 				012A85AB25555F2500B63E05 /* Assets.xcassets in Resources */,
 				012A85A925555F2200B63E05 /* Main.storyboard in Resources */,
 				012A85B8255562DD00B63E05 /* Home.storyboard in Resources */,
@@ -527,21 +576,24 @@
 				012A85A225555F2200B63E05 /* AppDelegate.swift in Sources */,
 				011A31BF2566BD5D00422DF3 /* Agenda.swift in Sources */,
 				01097082256383DA001D8995 /* Pessoa.swift in Sources */,
+				01A602362627F82A0068AE86 /* ComunicadoVC.swift in Sources */,
 				011A31C32566BE3800422DF3 /* Professor.swift in Sources */,
 				0109708C2563F037001D8995 /* Situacao.swift in Sources */,
 				0136172F2577B3D70083E6D7 /* AgendaDetalheVC.swift in Sources */,
+				01A602312627F7F10068AE86 /* OcorrenciaVC.swift in Sources */,
 				011A31E2256734DE00422DF3 /* AgendaTBVC.swift in Sources */,
 				014322882555C32900666818 /* BoletimVC.swift in Sources */,
 				013FD76F25FBE80200BBB4EF /* AgendaController.swift in Sources */,
+				01A6022D2627F7B50068AE86 /* FaltasVC.swift in Sources */,
 				010970892563EF3A001D8995 /* Matricula.swift in Sources */,
 				011A31C92566BEC500422DF3 /* Horario.swift in Sources */,
 				0134D0802600324200B539B2 /* AgendaWorker.swift in Sources */,
 				012A85A425555F2200B63E05 /* SceneDelegate.swift in Sources */,
 				012A85CB25556DCC00B63E05 /* Menu.swift in Sources */,
-				0144078E25A4F39200B40B2B /* HorariosTBVC.swift in Sources */,
 				011A31CE2566C1D500422DF3 /* Usuario.swift in Sources */,
 				0109707F25638344001D8995 /* Disciplinas.swift in Sources */,
 				0109708F256571DF001D8995 /* HorariosVC.swift in Sources */,
+				0194C5832627B99B00263FFE /* registroleitura.xcdatamodeld in Sources */,
 				013617272577B2360083E6D7 /* AgendaDetalheTBVC.swift in Sources */,
 				011A31C62566BE9600422DF3 /* Turma.swift in Sources */,
 			);
@@ -751,6 +803,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0194C5812627B99B00263FFE /* registroleitura.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0194C5822627B99B00263FFE /* registroleitura.xcdatamodel */,
+			);
+			currentVersion = 0194C5822627B99B00263FFE /* registroleitura.xcdatamodel */;
+			path = registroleitura.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 012A859625555F2200B63E05 /* Project object */;
 }

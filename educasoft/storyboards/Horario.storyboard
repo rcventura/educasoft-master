@@ -177,7 +177,41 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O9R-fc-5sW">
                                 <rect key="frame" x="3" y="472" width="408" height="390"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervalo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkr-9N-WDG">
+                                        <rect key="frame" x="25" y="74" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="spg-cV-kFJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matutino: 09:30 ate 09:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHD-yd-JZA">
+                                        <rect key="frame" x="25" y="126" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vespertino: 15:30 ate 15:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWw-GL-Q13">
+                                        <rect key="frame" x="25" y="174" width="209.5" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="SWw-GL-Q13" firstAttribute="leading" secondItem="O9R-fc-5sW" secondAttribute="leading" constant="25" id="Ccb-Up-zBq"/>
+                                    <constraint firstItem="nkr-9N-WDG" firstAttribute="leading" secondItem="O9R-fc-5sW" secondAttribute="leading" constant="25" id="EaY-zR-C1E"/>
+                                    <constraint firstAttribute="trailing" secondItem="SWw-GL-Q13" secondAttribute="trailing" constant="173.5" id="MEb-jd-KO1"/>
+                                    <constraint firstItem="SWw-GL-Q13" firstAttribute="top" secondItem="EHD-yd-JZA" secondAttribute="bottom" constant="27" id="YK3-fP-MMk"/>
+                                    <constraint firstAttribute="bottom" secondItem="SWw-GL-Q13" secondAttribute="bottom" constant="195" id="dcW-IB-Iv0"/>
+                                    <constraint firstAttribute="trailing" secondItem="nkr-9N-WDG" secondAttribute="trailing" constant="317.5" id="fiT-69-mm2"/>
+                                    <constraint firstItem="EHD-yd-JZA" firstAttribute="top" secondItem="nkr-9N-WDG" secondAttribute="bottom" constant="31" id="oN0-vx-4Om"/>
+                                    <constraint firstItem="EHD-yd-JZA" firstAttribute="leading" secondItem="O9R-fc-5sW" secondAttribute="leading" constant="25" id="psD-6D-9PZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="EHD-yd-JZA" secondAttribute="trailing" constant="8" id="wZ9-NK-NrO"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Português" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezd-AJ-O4X">
                                 <rect key="frame" x="81" y="148" width="65" height="49"/>
@@ -280,6 +314,7 @@
                             <constraint firstItem="xft-Y0-WPE" firstAttribute="top" secondItem="8pw-mg-xvA" secondAttribute="top" constant="27" id="hHr-zD-W9F"/>
                             <constraint firstItem="u7g-Dr-Sa0" firstAttribute="leading" secondItem="xah-ey-6UA" secondAttribute="trailing" id="iH7-7q-9rE"/>
                             <constraint firstItem="xah-ey-6UA" firstAttribute="leading" secondItem="xft-Y0-WPE" secondAttribute="trailing" constant="65" id="j6c-5K-nNK"/>
+                            <constraint firstItem="nkr-9N-WDG" firstAttribute="top" secondItem="8pw-mg-xvA" secondAttribute="top" constant="458" id="j72-4g-9Gl"/>
                             <constraint firstItem="1yn-ac-bk5" firstAttribute="top" secondItem="jB3-mE-HHQ" secondAttribute="bottom" constant="49" id="jjS-wq-TnT"/>
                             <constraint firstItem="8pw-mg-xvA" firstAttribute="bottom" secondItem="0xg-34-RGn" secondAttribute="bottom" constant="714" id="jsl-Ec-aZX"/>
                             <constraint firstItem="8pw-mg-xvA" firstAttribute="trailing" secondItem="O9R-fc-5sW" secondAttribute="trailing" constant="3" id="ltT-Th-pYY"/>

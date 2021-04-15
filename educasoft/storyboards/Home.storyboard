@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dZj-b7-sLP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,12 +14,12 @@
         <scene sceneID="Oeg-tE-JjU">
             <objects>
                 <viewController id="zqU-Ni-36u" customClass="HomeVC" customModule="educasoft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ilX-yT-6WB">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="ilX-yT-6WB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-eq-4Rq">
-                                <rect key="frame" x="0.0" y="196" width="414" height="700"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-eq-4Rq">
+                                <rect key="frame" x="0.0" y="204" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xCw-2k-5fT">
                                     <size key="itemSize" width="128" height="128"/>
@@ -40,14 +41,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvy-Ka-Qos">
-                                <rect key="frame" x="0.0" y="88" width="414" height="108"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvy-Ka-Qos">
+                                <rect key="frame" x="0.0" y="88" width="414" height="117"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-Rl-2ha">
-                                        <rect key="frame" x="20" y="15" width="75" height="83"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoaluno" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-Rl-2ha">
+                                        <rect key="frame" x="14" y="6" width="81" height="97"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="83" id="ech-HT-PZL"/>
-                                            <constraint firstAttribute="width" constant="75" id="keh-xH-6OC"/>
+                                            <constraint firstAttribute="height" constant="97" id="ech-HT-PZL"/>
+                                            <constraint firstAttribute="width" constant="81" id="keh-xH-6OC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Beatriz Alves Ventura da Silva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XO-Um-eI4">
@@ -59,7 +60,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7º Série" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X7-Ac-GvU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="7º Ano" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X7-Ac-GvU">
                                         <rect key="frame" x="269" y="67" width="137" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -69,11 +70,11 @@
                                 <color key="backgroundColor" red="0.60740047639999994" green="0.79076443380000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="3XO-Um-eI4" firstAttribute="leading" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="34" id="2Pa-Qc-xd0"/>
-                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="leading" secondItem="xvy-Ka-Qos" secondAttribute="leading" constant="20" symbolic="YES" id="BuA-Jo-0Cs"/>
+                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="leading" secondItem="xvy-Ka-Qos" secondAttribute="leading" constant="14" id="BuA-Jo-0Cs"/>
                                     <constraint firstAttribute="trailing" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="319" id="LO1-1c-5QQ"/>
                                     <constraint firstItem="2X7-Ac-GvU" firstAttribute="top" secondItem="3XO-Um-eI4" secondAttribute="bottom" constant="22" id="NZV-a6-V6k"/>
-                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="15" id="PZR-K6-LDf"/>
-                                    <constraint firstAttribute="bottom" secondItem="nXU-Rl-2ha" secondAttribute="bottom" constant="19" id="Rmr-vJ-l9M"/>
+                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="6" id="PZR-K6-LDf"/>
+                                    <constraint firstAttribute="bottom" secondItem="nXU-Rl-2ha" secondAttribute="bottom" constant="5" id="Rmr-vJ-l9M"/>
                                     <constraint firstAttribute="trailing" secondItem="2X7-Ac-GvU" secondAttribute="trailing" constant="8" id="UKb-cz-U1U"/>
                                     <constraint firstItem="3XO-Um-eI4" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="24" id="cLh-WF-0Y3"/>
                                     <constraint firstAttribute="trailing" secondItem="3XO-Um-eI4" secondAttribute="trailing" constant="8" id="vzV-IL-NpL"/>
@@ -96,15 +97,43 @@
                     <navigationItem key="navigationItem" id="b3L-LW-fzO"/>
                     <connections>
                         <outlet property="iconsCV" destination="bUw-eq-4Rq" id="rav-se-0Xa"/>
+                        <outlet property="imgAluno" destination="nXU-Rl-2ha" id="tZz-nt-KZQ"/>
                         <outlet property="titleHome" destination="b3L-LW-fzO" id="wXh-XT-TJv"/>
                         <segue destination="Xx0-El-DF1" kind="presentation" identifier="AgendaVC" id="cAg-3a-qaR"/>
                         <segue destination="uae-Fp-yZO" kind="presentation" identifier="BoletimVC" id="zbL-tR-D9X"/>
                         <segue destination="bbF-GD-Bxj" kind="presentation" identifier="HorariosVC" id="bHG-e6-Zap"/>
+                        <segue destination="rJW-Eq-DZB" kind="presentation" identifier="FaltasVC" id="ruI-2g-ByT"/>
+                        <segue destination="yAn-Km-3XU" kind="presentation" identifier="OcorrenciaVC" id="Xme-zq-Uq0"/>
+                        <segue destination="CA4-dk-C19" kind="presentation" identifier="ComunicadoVC" id="zTR-2q-YUx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b67-h7-ZPS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1960.8695652173915" y="60.9375"/>
+        </scene>
+        <!--Ocorrencia-->
+        <scene sceneID="Xfq-7Z-T1q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Ocorrencia" id="yAn-Km-3XU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCS-Ln-nRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2508" y="441"/>
+        </scene>
+        <!--Faltas-->
+        <scene sceneID="Twm-D9-F0P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Faltas" id="rJW-Eq-DZB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNn-WK-TfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2311" y="496"/>
+        </scene>
+        <!--Comunicado-->
+        <scene sceneID="vAF-Ec-TcO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Comunicado" id="CA4-dk-C19" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEt-UU-HUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2117" y="685"/>
         </scene>
         <!--Agenda-->
         <scene sceneID="Seh-Y6-VJz">
@@ -156,8 +185,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fotoaluno" width="586" height="842"/>
         <image name="house" catalog="system" width="128" height="106"/>
-        <image name="user" width="980" height="966"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

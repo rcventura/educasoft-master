@@ -9,18 +9,35 @@ import Foundation
 
 class AgendaController {
     
-    private var arrayLancamentos:[AgendaElement] = []
-    private var agendaLancamentoElement: AgendaElement?
+    private var agendaList = AgendaWorker()
+    private var arrayAgenda = Agenda()
     
-    func loadAgendaElement(index: Int) {
-        self.agendaLancamentoElement = arrayLancamentos[index]
+    func getAgenda(completion: @escaping() -> ()) {
+        agendaList.getAgenda { [weak self](result) in
+            switch result {
+            case .success(let listOf):
+                self?.arrayAgenda = listOf
+                completion()
+            print("Deu certoooooooooo")
+                print(self?.arrayAgenda)
+                
+            case .failure(let error):
+                print("Erro ao processar json \(error)")
+            }
+            
+        }
     }
 
-    var numberOfRows: Int {
-        return self.arrayLancamentos.count
+    
+    func numberOfRowInSection(section: Int) -> Int {
+        if self.arrayAgenda.count != 0 {
+            return self.arrayAgenda.count
+        }
+        return 0
     }
     
-    var agendaElement: AgendaElement? {
-        return self.agendaLancamentoElement
+    
+    func cellForRowAt(indexpath: IndexPath) -> AgendaElement {
+        return arrayAgenda[indexpath.row]
     }
 }

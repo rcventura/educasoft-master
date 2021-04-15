@@ -19,7 +19,7 @@ class HomeCVCell: UICollectionViewCell {
     }
 
     
-    
+    // FUNCAO DE SETUP PARA ITENS DO HOME
     func configMenuHome(menu: Menu) {
         self.lbDescricao.text = menu.descricao
         self.iconImageHome.image = UIImage(named: menu.iconImage ?? "")

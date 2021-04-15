@@ -7,15 +7,13 @@
 
 import Foundation
 
-struct Agenda: Codable {
-    let agendas:[AgendaElement]?
-}
+typealias Agenda = [AgendaElement]
 
 struct AgendaElement: Codable {
     let codagenda: Int?
-    let codprofessor: Int?
+    let codprofessor: Professor
     let codaluno: Int?
-    let coddisciplina: Int?
+    let coddisciplina: Disciplinas
     let datalancamento: String?
     let mensagem: String?
 }

@@ -23,54 +23,27 @@ class AgendaVC: UIViewController {
         self.calendarioAgenda.backgroundColor = UIColor.white
     }
     
+    // CONFIGUACAO DA TABLEVIEW
     private func configTableView() {
-        
         self.tbvAgenda.register(UINib(nibName: "AgendaTBVC", bundle: nil), forCellReuseIdentifier: "AgendaTBVC")
-
         self.tbvAgenda.delegate = self
         self.tbvAgenda.dataSource = self
-        
+        self.tbvAgenda.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.configDatePicker()
         self.configTableView()
-        
-        AgendaWorker().getAgendaByAluno(codagenda: 1, codaluno: 1) { (agendaElement, error) in
-            if let _agendaElement = agendaElement {
-                print("*****************************")
-                print(_agendaElement.codagenda)
-            }
-        }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func bntVoltarAC(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
 }
 extension AgendaVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        //self.controller.loadAgendaElement(index: indexPath.row)
-        
-        
-        //self.agendaSelecionada(id: self.controller.agendaElement?.codprofessor, disciplina;: self.controller.agendaElement?.coddisciplina)
-
-        //self.performSegue(withIdentifier: "AgendaDetalheVC", sender: self.arrayLancamentos[indexPath.row])
-        
-        //print(self.arrayLancamentos[indexPath.row])
-
+        self.performSegue(withIdentifier: "AgendaDetalheVC", sender: nil)
     }
 }
 
@@ -78,23 +51,17 @@ extension AgendaVC: UITableViewDelegate{
 extension AgendaVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.controller.numberOfRows
+        // return self.controller.numberOfRowInSection(section: section)
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell: AgendaTBVC? = tableView.dequeueReusableCell(withIdentifier: "AgendaTBVC", for: indexPath) as? AgendaTBVC
-
-        self.controller.loadAgendaElement(index: indexPath.row)
-        
-        cell?.setup(value:self.controller.agendaElement, delegate: self)
-        
+        cell?.setupAgenda(delegate: self)
         return cell ?? UITableViewCell()
-        
     }
-    
-    
-    
+        
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return " "
     }

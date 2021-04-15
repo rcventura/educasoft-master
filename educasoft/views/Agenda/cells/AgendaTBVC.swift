@@ -10,10 +10,14 @@ protocol AgendaTBVCDelegate: class {
     func agendaSelecionada(id: String, disciplina: String)
 }
 
+private var controller: AgendaController = AgendaController()
+
 class AgendaTBVC: UITableViewCell {
     
     weak var delegate: AgendaTBVCDelegate?
     //private var agenda: Agenda?
+    private var arrayAgenda: AgendaElement?
+    
     
     @IBOutlet weak var lbNomeProfessor: UILabel!
     @IBOutlet weak var lbNomeMateria: UILabel!
@@ -23,7 +27,7 @@ class AgendaTBVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,16 +36,11 @@ class AgendaTBVC: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(value: AgendaElement?, delegate: AgendaTBVCDelegate?) {
-        
-        if let _value = value {
-            //self.agenda = value
+    // SETUP DA TABLEVIEW QUE LISTA AS NOTIFICACAO DA AGENDA
+    func setupAgenda(delegate: AgendaTBVCDelegate?) {
             self.delegate = delegate
-//            self.lbNomeProfessor.text = _value.codprofessor
-  //          self.lbNomeMateria.text = _value.coddisciplina
-
+            self.lbNomeProfessor.text = "Rodrigo Ventura"
+            self.lbNomeMateria.text = "Matemática"
         }
-        }
-        
     }
     

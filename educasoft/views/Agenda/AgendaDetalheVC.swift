@@ -64,7 +64,7 @@ extension AgendaDetalheVC: UITableViewDelegate {
 extension AgendaDetalheVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return self.idSelecionado?.count ?? 0
+        return 1
         
     }
     
@@ -77,13 +77,11 @@ extension AgendaDetalheVC: UITableViewDataSource {
 
         let cell: AgendaDetalheTBVC? = tableView.dequeueReusableCell(withIdentifier: "AgendaDetalheTBVC", for: indexPath) as? AgendaDetalheTBVC
 
-        //let detailmsg = self.agendaElement[indexPath.row]
-        //cell?.setupdetalhe(value: self.agendaElement[indexPath.row])
-        //cell?.lbDatailDisciplina.text = detailmsg.iddisciplina
+        cell?.setupdetalhe()
         
         return cell ?? UITableViewCell()
     }
-    
-    
 }
+
+
 
