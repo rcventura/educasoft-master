@@ -44,6 +44,9 @@ class HomeVC: UIViewController {
         self.titleHome.title = "Centro Educacional Geração"
         self.iconsCV.delegate = self
         self.iconsCV.dataSource = self
+        
+        self.imgAluno.layer.cornerRadius = self.imgAluno.frame.size.width/2
+        self.imgAluno.clipsToBounds = true
     }
 
     // CONEXAO COM API ( LOCAL )

@@ -14,11 +14,11 @@
         <scene sceneID="Oeg-tE-JjU">
             <objects>
                 <viewController id="zqU-Ni-36u" customClass="HomeVC" customModule="educasoft" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="ilX-yT-6WB">
+                    <view key="view" contentMode="scaleToFill" id="ilX-yT-6WB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-eq-4Rq">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bUw-eq-4Rq">
                                 <rect key="frame" x="0.0" y="204" width="414" height="692"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xCw-2k-5fT">
@@ -41,14 +41,14 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvy-Ka-Qos">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvy-Ka-Qos">
                                 <rect key="frame" x="0.0" y="88" width="414" height="117"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoaluno" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-Rl-2ha">
-                                        <rect key="frame" x="14" y="6" width="81" height="97"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fotoaluno" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-Rl-2ha">
+                                        <rect key="frame" x="9" y="14" width="95" height="91"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="97" id="ech-HT-PZL"/>
-                                            <constraint firstAttribute="width" constant="81" id="keh-xH-6OC"/>
+                                            <constraint firstAttribute="height" constant="91" id="ech-HT-PZL"/>
+                                            <constraint firstAttribute="width" constant="95" id="keh-xH-6OC"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maria Beatriz Alves Ventura da Silva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XO-Um-eI4">
@@ -69,12 +69,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.60740047639999994" green="0.79076443380000006" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="3XO-Um-eI4" firstAttribute="leading" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="34" id="2Pa-Qc-xd0"/>
-                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="leading" secondItem="xvy-Ka-Qos" secondAttribute="leading" constant="14" id="BuA-Jo-0Cs"/>
-                                    <constraint firstAttribute="trailing" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="319" id="LO1-1c-5QQ"/>
+                                    <constraint firstItem="3XO-Um-eI4" firstAttribute="leading" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="25" id="2Pa-Qc-xd0"/>
+                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="leading" secondItem="xvy-Ka-Qos" secondAttribute="leading" constant="9" id="BuA-Jo-0Cs"/>
+                                    <constraint firstAttribute="trailing" secondItem="nXU-Rl-2ha" secondAttribute="trailing" constant="310" id="LO1-1c-5QQ"/>
                                     <constraint firstItem="2X7-Ac-GvU" firstAttribute="top" secondItem="3XO-Um-eI4" secondAttribute="bottom" constant="22" id="NZV-a6-V6k"/>
-                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="6" id="PZR-K6-LDf"/>
-                                    <constraint firstAttribute="bottom" secondItem="nXU-Rl-2ha" secondAttribute="bottom" constant="5" id="Rmr-vJ-l9M"/>
+                                    <constraint firstItem="nXU-Rl-2ha" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="14" id="PZR-K6-LDf"/>
+                                    <constraint firstAttribute="bottom" secondItem="nXU-Rl-2ha" secondAttribute="bottom" constant="12" id="Rmr-vJ-l9M"/>
                                     <constraint firstAttribute="trailing" secondItem="2X7-Ac-GvU" secondAttribute="trailing" constant="8" id="UKb-cz-U1U"/>
                                     <constraint firstItem="3XO-Um-eI4" firstAttribute="top" secondItem="xvy-Ka-Qos" secondAttribute="top" constant="24" id="cLh-WF-0Y3"/>
                                     <constraint firstAttribute="trailing" secondItem="3XO-Um-eI4" secondAttribute="trailing" constant="8" id="vzV-IL-NpL"/>
