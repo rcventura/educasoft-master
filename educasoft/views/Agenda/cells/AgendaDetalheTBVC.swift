@@ -67,10 +67,9 @@ class AgendaDetalheTBVC: UITableViewCell {
         confirmacao.confirmacao = "Confirmado"
         do {
             try context.save()
-            print("OK")
+            
         } catch {
             print("Erro ao confirmar a leitura!! \(error) " )
-            print("OKkKKKK")
         }
     
     }
