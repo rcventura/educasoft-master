@@ -43,13 +43,14 @@ class AgendaDetalheTBVC: UITableViewCell {
         if confi != "" {
         self.lbStatus.text = confi
         } else {
-            self.lbStatus.text = " Aguardando Confirmação"
+            self.lbStatus.text = "Aguardando Confirmação"
         }
         return confi
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.getStatusConfirmacao()
 
     }
 
@@ -66,8 +67,10 @@ class AgendaDetalheTBVC: UITableViewCell {
         confirmacao.confirmacao = "Confirmado"
         do {
             try context.save()
+            print("OK")
         } catch {
             print("Erro ao confirmar a leitura!! \(error) " )
+            print("OKkKKKK")
         }
     
     }

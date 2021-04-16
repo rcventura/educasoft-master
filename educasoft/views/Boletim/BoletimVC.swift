@@ -11,7 +11,8 @@ class BoletimVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+
     }
 
     @IBAction func bntVoltar(_ sender: UIBarButtonItem) {
